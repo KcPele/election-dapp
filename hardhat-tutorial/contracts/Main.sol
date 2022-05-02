@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 
 import "./Events.sol";
 import "./VotingAccess.sol";
-
+//0x41546A87CBC953dD4aC22b43D46B5dD92DbcF4FF contract
 /** 
  * @title Zuri School Voting
  * @dev Implements voting process along with vote delegation
@@ -62,9 +62,9 @@ contract ZuriSchoolVoting is VotingEvents, VotingAccess {
      * @dev setup chairperson, stakeholders vote weights & school name
      * @param _schoolName name of school that owns the contract
      */
-    constructor(string memory _schoolName, address _chairperson) {
+    constructor(string memory _schoolName) {
         schoolName = _schoolName;
-        chairperson = _chairperson;
+        chairperson = msg.sender;
 
         _initializeStakeholdersVoteWeight(1);
 
