@@ -9,8 +9,8 @@ import Student from "../components/Student";
 import Admin from "../components/Admin";
 import Loading from "../components/helpers/Loading";
 import { providerSignerContext } from "../context/ProviderOrSignerContext";
-import Home from "../components/Home";
 import Navbar from "../components/Navbar";
+import HomePage from "../components/HomePage";
 
 export default function Dashboard() {
   const { generalError, setGeneralError } = useContext(electionContext);
@@ -41,7 +41,7 @@ export default function Dashboard() {
       case "director":
         return <TeacherDirector />;
       default:
-        return <Home />;
+        return <HomePage />;
     }
   };
 

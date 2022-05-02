@@ -1,6 +1,6 @@
 import Carousel from "./helpers/Carousel";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div>
       <Carousel />
