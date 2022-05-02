@@ -34,7 +34,7 @@ function Navbar() {
     }
     return activities.map(activity => {
       return <li key={activity.hash}>
-              <a  target="_blank" href={`https://mumbai.polygonscan.com/tx/${activity.hash}`}>View on Chain</a>
+              <a  target="_blank" rel="noreferrer" href={`https://rinkeby.etherscan.io/tx/${activity.hash}`}>View on Chain</a>
       </li>
     })
   }
@@ -63,7 +63,7 @@ function Navbar() {
           {!walletConnected ? (
             <button
               onClick={connectWallet}
-              class="btn btn-sm btn-outline-secondary "
+              className="btn btn-sm btn-outline-secondary "
               type="button"
             >
               Connect Wallet
@@ -93,7 +93,7 @@ function Navbar() {
                     {activities.length > 0 ? activities.length : "0"}
                   </span>
                 </div>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
                  {displayAcivities()}
                 </ul>
               </div>

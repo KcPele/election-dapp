@@ -83,7 +83,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Zuri Voting School Dapp</title>
+      
         <meta name="description" content="Whitelist-Dapp" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

@@ -17,23 +17,23 @@ export default function StaffOffcanvas() {
         All Staff
       </button>
       <div
-        class="offcanvas offcanvas-start"
+        className="offcanvas offcanvas-start"
         tabIndex="-1"
         id="offcanvasWithBackdrop"
         aria-labelledby="offcanvasWithBackdropLabel"
       >
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">
+        <div className="offcanvas-header">
+          <h5 className="offcanvas-title" id="offcanvasWithBackdropLabel">
             All Teachers and Directors
           </h5>
           <button
             type="button"
-            class="btn-close text-reset"
+            className="btn-close text-reset"
             data-bs-dismiss="offcanvas"
             aria-label="Close"
           ></button>
         </div>
-        <div class="offcanvas-body">
+        <div className="offcanvas-body">
           <div className="row">
           <div className="col-md-12">
            

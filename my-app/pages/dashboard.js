@@ -9,7 +9,7 @@ import Student from "../components/Student";
 import Admin from "../components/Admin";
 import Loading from "../components/helpers/Loading";
 import { providerSignerContext } from "../context/ProviderOrSignerContext";
-import Home from ".";
+import Home from "../components/Home";
 import Navbar from "../components/Navbar";
 
 export default function Dashboard() {

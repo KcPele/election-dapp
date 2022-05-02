@@ -8,7 +8,7 @@ export default function NoticeBoard() {
     return (
       <div key={val.electionName} className="card">
         <h4 className="card-title">{val.electionName}</h4>
-        <h6 class="card-subtitle mb-1 text-muted">{val.proposalName}</h6>
+        <h6 className="card-subtitle mb-1 text-muted">{val.proposalName}</h6>
         <div className="card-body">
           <p>The total vote count is {val.voteCount}</p>
         </div>

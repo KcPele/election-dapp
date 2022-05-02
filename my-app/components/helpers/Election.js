@@ -21,16 +21,16 @@ export default function Election() {
     return (
       <div key={val.id} className="col-4 mt-2 ">
         <div className="card shadow-sm border-0">
-          <div class="card-body">
-            <h5 class="card-title">{val.name}</h5>
-            <h6 class="card-subtitle mt-2 text-muted">Proposals</h6>
+          <div className="card-body">
+            <h5 className="card-title">{val.name}</h5>
+            <h6 className="card-subtitle mt-2 text-muted">Proposals</h6>
           </div>
-          <ul class="list-group list-group-flush">
+          <ul className="list-group list-group-flush">
             {val.proposals.map((prop) => {
               return (
                 <li
                   key={prop}
-                  class="list-group-item d-flex justify-content-between"
+                  className="list-group-item d-flex justify-content-between"
                 >
                   {prop}
                   {val.isActive && (
@@ -45,7 +45,7 @@ export default function Election() {
               );
             })}
           </ul>
-          <div class="card-body">
+          <div className="card-body">
             {chairmanAddress === address && (
               <div>
                 {val.isActive ? (
